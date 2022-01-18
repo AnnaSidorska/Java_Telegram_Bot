@@ -9,13 +9,13 @@ import java.util.List;
 
 public class ButtonsService {
 
-
     public ReplyKeyboardMarkup setButtons(List<KeyboardRow> keyboardRowList) {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         replyKeyboardMarkup.setSelective(true);
         replyKeyboardMarkup.setKeyboard(keyboardRowList);
         return replyKeyboardMarkup;
     }
+
     public List<KeyboardRow> createButtons(List<String> buttons) {
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardRow = new KeyboardRow();
